@@ -1,5 +1,8 @@
 {
   "name": "codespaces-react",
+  "homepage": "https://github.com/Adamm001/shoppy-demo",
+  "homepage": "https://github.com/Adamm001",
+  "homepage": "https://Shoppy.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
