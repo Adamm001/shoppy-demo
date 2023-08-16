@@ -26,7 +26,7 @@ const Price = ({price, rating}) => {
         </div>
     )
 }
-const Buttons = ({setOpenAbout, openAbout}) => {
+const Buttons = ({setOpenAbout, openAbout, id}) => {
     const toggleAbout = () => {
         openAbout ? setOpenAbout(false) : setOpenAbout(true)
     }
