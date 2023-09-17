@@ -4,455 +4,95 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #e3d7eb;
+  background-color: #FFFDE7;
 }
-.icons{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 10px;
-  align-self: stretch;
-  width: 140px;
+.logo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
-.icons button {
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
-  gap: 10px;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  color: white;
-  background: none;
-  border: none;
-}
-.Navbar{
-  position: fixed;
-  width: 100%;
-  display: flex;
-  height: 80px;
-  padding: 0px 30px 0px 50px;
-  justify-content: space-between;
-  align-items: center;
-  background: #6C2699;
-  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.25);
-}
-.menu, .shop{
-  font-size: 20px;
-}
-.icons button:hover{
-  color: #f16167;
-  cursor: pointer;
-}
-.rate{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1px;
-}
-.texts{
-  display: flex;
-  padding: 5px 5px 5px 15px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-}
-.price{
-  display: flex;
-  padding: 0px 10px;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-  background-color: #c897e7;
-  border-radius: 10px;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.card img{
-  width: 210px;
-  height: 210px; 
-  border-radius: 10px;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.card{
-  width: 220px;
-  display: flex;
-  padding: 5px 5px 10px 5px;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-  border-radius: 10px;
-  background: #FFF;
-  border: none;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.texts h2{
-  align-self: flex-start;
-  color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  overflow: hidden;
-  height: 25px;
-  overflow: hidden;
-}
-.texts p{
-  align-self: flex-start;
-  height: 14px;
-  color: #717171;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  overflow: hidden;
-}
-.price h1{
-  color: #000;
-  font-family: Inter;
+.logo p{
+  color: #1B1713;
+  font-family: Irish Grover;
   font-size: 25px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.rate p{
-  color: #000;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
-
+  text-transform: uppercase;
 }
-.cards{
+.logo{
+  margin: 5px 0;
   display: flex;
-  padding: 100px 100px 10px 100px;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  row-gap: 20px;
-  flex-wrap: wrap;
-}
-.dropdown{
-  position: absolute;
-  top: 75px;
-  right: 20px;
-  display: flex;
-  width: 169px;
-  height: 169px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-shrink: 0;
-  background: #B07DD0;
-  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 2px 0px rgba(0, 0, 0, 0.25);
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-.dropdown.openNav{
-  max-height: 169px;
-  padding: 10px;
-  border: 5px solid #944EC2;
-}
-.dropdown button{
-  display: flex;
-  height: 30px;
-  padding-left: 5px;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
-  align-self: stretch;
-  border-radius: 5px;
-  border: 3px solid #4A0D72;
-  background: #6C2699;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
-  color: #FFF;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.dropdown button:active{
-  box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
-}
-.buttons button{
-  padding: 5px 5px;
-  background-color: #c897e7;
-  border-radius: 10px;
-  margin: 3px;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
-  border: none;
-  cursor: pointer;
-}
-.buttons button:hover{
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25), inset -1px -3px 5px rgba(0, 0, 0, 0.1);
-}
-.buttons button:active{
-  box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.25);
-}
-.shopCards{
-  position: absolute;
-  top: 70px;
-  right: 120px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-end;
   gap: 5px;
-  border-radius: 20px 5px 20px 20px;
-  background: #D0C1E3;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  padding: 0;
-  border: none;
 }
-.shopCards.openShop{
-  max-height: 3000px;
-  padding: 5px;
-  border: 5px solid #4A0D72;
-}
-
-.shopPrice button{
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background: #944EC2;
-  border: none;
-  color: #fff;
-}
-.shopPrice{
+.navbar{
   display: flex;
-  align-items: flex-end;
-  gap: 120px;
-  align-self: stretch;
-}
-.shopPrice p{
-  display: flex;
-  padding: 5px 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.minus, .plus{
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  background-color: #9747FF;
-}
-.plusButton{
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-}
-.plusPrice{
-  display: flex;
-  padding: 5px 5px;
-  align-items: flex-start;
-  gap: 15px;
-  color: #fff;
-}
-.plusPrice p{
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  display: flex;
-  padding: 5px 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.shopText h2{
-  color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-display: flex;
-padding: 0px 5px;
-justify-content: center;
-
-}
-.shopText{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 0;
-}
-.shopCard img{
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.shopCard{
-  display: flex;
-  flex-direction: row;
-  width: 349px;
-  padding: 10px;
-  align-items: center;
-  border-radius: 10px;
-  background: #FFF;
-}
-.Niit{
-  display: flex;
-  width: 349px;
-  padding: 20px 10px 10px 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border-radius: 10px;
-  background: #FFF;
-}
-.Niit button{
-  display: flex;
-  padding: 12px 92px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: #944EC2;
-  border: none;
-}
-.titleDescription{
-  display: flex;
-  height: 356px;
-  padding: 20px 20px 80px 20px;
-  flex-direction: column;
-  align-items: center;
-  gap: 36px;
-  align-self: stretch;
-}
-.aboutTwo{
-  display: flex;
-width: 502px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 30px;
-}
-.rateTwo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.aboutPrice{
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 23px;
-}
-.aboutPrice img{
-  width: 459px;
-height: 459px;
-border-radius: 10px;
-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.about{
-  position: fixed;
-  top: 70px;
-  left: 300px;
-  display: inline-flex;
-  align-items: flex-start;
-  border-radius: 20px;
-  background: #D0C1E3;
-  border: none;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.about.openAbout{
-  padding: 20px;
-  max-height: 600px;
-  border: 5px solid #6C2699;
-}
-.titleDescription h2{
-  display: flex;
-  padding: 10px 0px 10px 20px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-}
-.titleDescription p{
-  color: #454545;
-  font-family: Inter;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.rateTwo p{
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.starFill{
-  font-size: 40;
-}
-.aboutTwo button{
-  display: flex;
-  padding: 14px 43px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-radius: 40px;
-  background: #944EC2;
-  border: none;
-  cursor: pointer;
-}
-.aboutTwo button:hover{
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25), inset -1px -3px 5px rgba(0, 0, 0, 0.1);
-  color: #f16167;
-}
-.aboutPrice h2{
-  color: #000;
-font-family: Inter;
-font-size: 40px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-}
-.aboutTwo .exitButton{
-  display: flex;
-  width: 50px;
-  height: 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 10px;
-  background: #000;
+  width: 100%;
+  padding: 0px 30px;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #1B1713;
+  background: #D1B18D;
+  z-index: 1000px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
-.Navbar .logobutton{
-  background: none;
-  border: none;
+
+.search{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-radius: 30px;
+  border: 2px solid #644C3C;
+  background: #D1B18D;
   cursor: pointer;
+}
+
+.menuBar button{
+  border: none;
+  display: flex;
+  height: 40px;
+  padding: 23px 10px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #644C3C;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.menuBar button:hover{
+  background-color: #1B1713;
+}
+.menuBar button:hover p{
+  
+  color: #FDCF78;
+}
+.menuBar button p{
+  color: #FFF;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.menuBar{
+  position: absolute;
+  top: 56px;
+  display: flex;
+  width: 200px;
+  height: 579px;
+  padding: 30px 5px 20px 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-right: 5px solid #1B1713;
+  background: #D1B18D;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25) inset;
 }
